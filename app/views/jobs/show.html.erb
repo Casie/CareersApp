@@ -8,6 +8,8 @@
     </p>
     <p>
       <%= @job.company %>
+      <a href='http://www.glassdoor.com/index.htm'>powered by <img src='https://www.glassdoor.com/static/img/api/glassdoor_logo_80.png' title='Job Search' /></a>
+      <iframe width="400" height="450" frameborder="0" style="border:0" src="http://api.glassdoor.com/api/api.htm?v=1&format=json&t.p=44677&t.k=itGrhMpHd4w&action=employers&q=<%@job.company%>&userip=192.168.43.42&useragent=Mozilla/%2F4.0">
     </p>
     <button class="btn btn-default">
       <%= link_to "Apply for Job", @job.url %>
